@@ -160,8 +160,8 @@ cython_debug/
 #.idea/
 
 # project specific files
-ckpts/
+# ckpts/
 
 # new dirs for data
-data/
-c3vd_registered_videos_raw/
+# data/
+# c3vd_registered_videos_raw/
