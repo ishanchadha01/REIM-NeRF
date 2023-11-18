@@ -1,5 +1,7 @@
 from pathlib import Path
 import shutil
+import sys
+sys.path.append(".")
 from reimnerf.datasets.preprocessing.raw_data import C3VD, remove_json_fames ,keep_only_json_fames
 import argparse
 
@@ -32,6 +34,7 @@ def main(args):
             else:
                 print(f'skipping dataset:{ds_p.name} because already exists, manually delete it or specify the overwrite flag')
                 continue
+        print(ds_p)
         c3vd_dataset = C3VD(ds_p)
         c3vd_dataset._normalize_dataset()
 

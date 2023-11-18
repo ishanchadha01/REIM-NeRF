@@ -263,7 +263,7 @@ class C3VD(ReimNeRFDataset):
 
         self.data_dir = Path(data_path)
         self.poses_path = self.data_dir/'pose.txt'
-        self.calib_path = Path(__file__).parents[2]/'resources'/'c3vd_calib.json'
+        self.calib_path = Path(__file__).parents[3]/'resources'/'c3vd_calib.json'
         assert self.calib_path.exists()
 
         self.far_bounds_scaling = 1.1

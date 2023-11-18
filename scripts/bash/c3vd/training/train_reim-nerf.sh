@@ -5,7 +5,7 @@ export LD_LIBRARY_PATH=/opt/conda/lib:$LD_LIBRARY_PATH
 
 echo "Training REIM-Nerf, our full model, which is a combination of NeRF conditioned on the light-source location and sparce depth supervision"
 
-dataset_root_dir=/path_to_c3vd_dataset/
+dataset_root_dir=/Users/ishan/Documents/research/REIM-NeRF/data
 width=270
 height=216
 total_samples=15000
